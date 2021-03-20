@@ -1,2 +1,2 @@
-# Laba3
-CNN - Learning Rate Schedules
+# Лабораторная работа #3
+## Изучение влияние параметра “темп обучения” на процесс обучения нейронной сети на примере решения задачи классификации [Oregon Wildlife(https://www.kaggle.com/virtualdvid/oregon-wildlife) с использованием техники обучения Transfer Learning
