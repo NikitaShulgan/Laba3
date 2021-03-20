@@ -6,3 +6,7 @@
 #### owl-1616095020.9706807, lr = 0.001
 #### owl-1616096200.7460656, lr = 0.0001
 ![image](https://user-images.githubusercontent.com/80168174/111886334-10a62100-89de-11eb-8a00-231c14ecca2a.png)
+#### epoch_categorical_accuracy
+<img src="https://raw.githubusercontent.com/NikitaShulgan/Laba3/main/For_Readmi/Laba3_2epoch_categorical_accuracy.svg">
+#### epoch_loss
+<img src="https://raw.githubusercontent.com/NikitaShulgan/Laba3/main/For_Readmi/Laba3_2epoch_loss.svg">
