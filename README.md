@@ -11,3 +11,8 @@
 
 #### epoch_loss
 <img src="https://raw.githubusercontent.com/NikitaShulgan/Laba3/main/For_Readmi/Laba3_2epoch_loss.svg">
+
+### Задание 2. Реализовать и применить в обучении следующие политики изменения темпа обучения, а также определить оптимальные параметры для каждой политики:
+### 2а. Пошаговое затухание (Step Decay)
+
+### 2а. Экспоненциальное затухание (Exponential Decay)
