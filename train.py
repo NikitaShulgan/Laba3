@@ -67,6 +67,13 @@ def build_model():
   outputs = tf.keras.layers.Dense(NUM_CLASSES, activation="softmax")(x)
   return tf.keras.Model(inputs=inputs, outputs=outputs)
 
+def step_decay(epoch):
+	initial_lrate = 0.1
+	drop = 0.5
+	epochs_drop = 10.0
+	lrate = initial_lrate * math.pow(drop, math.floor((1+epoch)/epochs_drop))
+	return lrate
+
 
 def main():
   args = argparse.ArgumentParser()
@@ -81,7 +88,7 @@ def main():
   model = build_model()
 
   model.compile(
-    optimizer=tf.optimizers.Adam(lr=0.0001),
+    optimizer=tf.optimizers.Adam(),
     loss=tf.keras.losses.categorical_crossentropy,
     metrics=[tf.keras.metrics.categorical_accuracy],
   )
