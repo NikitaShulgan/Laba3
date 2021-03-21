@@ -16,3 +16,14 @@
 ### 2а. Пошаговое затухание (Step Decay)
 
 ### 2а. Экспоненциальное затухание (Exponential Decay)
+####  owl-1616285996.999752, k=0.1
+####  owl-1616287216.463951, k=0.2
+####  owl-1616288058.7027614, k=0.3
+####  owl-1616288907.0635068, k=0.4
+####  owl-1616337614.888935, k=0.5
+![image](https://user-images.githubusercontent.com/80168174/111909940-4bf13000-8a70-11eb-8d10-c1e00016f9f0.png)
+#### epoch_categorical_accuracy
+<img src="https://raw.githubusercontent.com/NikitaShulgan/Laba3/main/For_Readmi/exp_epoch_categorical_accuracy.svg">
+
+#### epoch_loss
+<img src="https://raw.githubusercontent.com/NikitaShulgan/Laba3/main/For_Readmi/exp_epoch_loss.svg">
