@@ -4,7 +4,7 @@
 #### owl-1616081750.4760325, lr = 0.1
 #### owl-1616093079.8669348, lr = 0.01
 #### owl-1616095020.9706807, lr = 0.001
-#### owl-1616096200.7460656, lr = 0.0001
+#### owl-1616096200.7460656, lr = 0.0001, нижний оранжевый owl-1616096200.7460656/validation
 ![image](https://user-images.githubusercontent.com/80168174/111886334-10a62100-89de-11eb-8a00-231c14ecca2a.png)
 #### epoch_categorical_accuracy
 <img src="https://raw.githubusercontent.com/NikitaShulgan/Laba3/main/For_Readmi/1_epoch_categorical_accuracy.svg">
