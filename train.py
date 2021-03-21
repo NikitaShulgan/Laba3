@@ -67,12 +67,11 @@ def build_model():
   outputs = tf.keras.layers.Dense(NUM_CLASSES, activation="softmax")(x)
   return tf.keras.Model(inputs=inputs, outputs=outputs)
 
-def step_decay(epoch):
-	initial_lrate = 0.1
-	drop = 0.6
-	epochs_drop = 10.0
-	lrate = initial_lrate * math.pow(drop, math.floor((1+epoch)/epochs_drop))
-	return lrate
+def exp_decay(epoch):
+   initial_lrate = 0.1
+   k = 0.1
+   lrate = initial_lrate * exp(-k*t)
+   return lrate
 
 
 def main():
@@ -92,6 +91,8 @@ def main():
     loss=tf.keras.losses.categorical_crossentropy,
     metrics=[tf.keras.metrics.categorical_accuracy],
   )
+
+lrate = LearningRateScheduler(exp_decay)
 
   log_dir='{}/owl-{}'.format(LOG_DIR, time.time())
   model.fit(
