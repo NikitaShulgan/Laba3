@@ -14,6 +14,16 @@
 
 ### Задание 2. Реализовать и применить в обучении следующие политики изменения темпа обучения, а также определить оптимальные параметры для каждой политики:
 ### 2а. Пошаговое затухание (Step Decay)
+#### owl-1616282276.646658, drop = 0.5, epochs_drop = 10.0
+#### owl-1616284313.4728131, drop = 0.6, epochs_drop = 10.0
+#### owl-1616339973.6213276, drop = 0.4, epochs_drop = 10.0
+#### owl-1616341240.7965152, drop = 0.5, epochs_drop = 5.0
+![image](https://user-images.githubusercontent.com/80168174/111912113-40eecd80-8a79-11eb-8551-a5e713ebf7d5.png)
+#### epoch_categorical_accuracy
+<img src="https://raw.githubusercontent.com/NikitaShulgan/Laba3/main/For_Readmi/step_epoch_categorical_accuracy.svg">
+
+#### epoch_loss
+<img src="https://raw.githubusercontent.com/NikitaShulgan/Laba3/main/For_Readmi/step_epoch_loss.svg">
 
 ### 2а. Экспоненциальное затухание (Exponential Decay)
 ####  owl-1616285996.999752, k=0.1, серый owl-1616285996.999752/valid снизу
