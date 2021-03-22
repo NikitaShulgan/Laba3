@@ -92,7 +92,7 @@ def main():
     metrics=[tf.keras.metrics.categorical_accuracy],
   )
 
- lrate = LearningRateScheduler(exp_decay)
+  lrate = LearningRateScheduler(exp_decay)
 
   log_dir='{}/owl-{}'.format(LOG_DIR, time.time())
   model.fit(
