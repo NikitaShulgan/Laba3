@@ -93,7 +93,16 @@ lrate = LearningRateScheduler(exp_decay)
 #### epoch_loss
 <img src="https://raw.githubusercontent.com/NikitaShulgan/Laba3/main/For_Readmi/exp_valid_epoch_loss.svg">
 
-#### На 40й эпохе график с ```k=0.5``` достиг своего максимума 90%. Потом результаты стали ухудшаться.
+#### На 25й эпохе график с ```k=0.1``` достиг минимальной ошибки 0,1868. Метрика качества 89,07%.
+
+### Общее сравнение
+![image](https://user-images.githubusercontent.com/80168174/112022103-02bde080-8b43-11eb-8588-3939dfdb8f52.png)
+
+#### epoch_categorical_accuracy
+<img src="https://raw.githubusercontent.com/NikitaShulgan/Laba3/main/For_Readmi/best_valid_epoch_categorical_accuracy.svg">
+
+#### epoch_loss
+<img src="https://raw.githubusercontent.com/NikitaShulgan/Laba3/main/For_Readmi/best_valid_epoch_loss.svg">
 
 ###  Анализ результатов
    Я исследовал 2 алгоритма затухания: Пошаговое затухание (Step Decay) и Экспоненциальное затухание (Exponential Decay). По результатам экспериментов видно, что в первом задании наилучший результат на валидации 89,74% (мы использовали ```Adam(lr=0.001)```), в пошаговом затухании 89,78% (```drop = 0.5, epochs_drop = 10.0```), в экспоненциальном затухании 90,00% (```k=0.5```). Наилучший результат у меня в экспоненциальном затухании (90,00%). Если сравнивать со стандартным lr и пошаговым затуханием, то разница 0,26% и 0,22% соответственно. Лучше всего себя показало экспоненциальное затухание с ```k=0.5```. Также я заметил, что при увеличении параметра и ```k``` в экспоненциальном затухании ведет к улучшению результатов, до определенного момента.
