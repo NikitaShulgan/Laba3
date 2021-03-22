@@ -71,7 +71,7 @@ lrate = LearningRateScheduler(step_decay)
 <img src="https://raw.githubusercontent.com/NikitaShulgan/Laba3/main/For_Readmi/step_decay_2_epoch_categorical_accuracy.svg">
 
 #### epoch_loss
-<img src="https://raw.githubusercontent.com/NikitaShulgan/Laba3/main/For_Readmi/step_decay_2_epoch_loss.svg">
+<img src="https://raw.githubusercontent.com/NikitaShulgan/Laba3/main/For_Readmi/step_dacay_2_epoch_loss.svg">
 
 #### На 24й эпохе функция потерь с ```drop = 0.6, epochs_drop = 10.0``` достигла своего мин значения 0,188. Метрика качества на 24 эпохе 89,13%. 
 
