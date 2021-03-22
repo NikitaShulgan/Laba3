@@ -25,7 +25,7 @@ for gpu in gpus:
 
 
 LOG_DIR = 'logs'
-BATCH_SIZE = 64
+BATCH_SIZE = 32
 NUM_CLASSES = 20
 RESIZE_TO = 224
 TRAIN_SIZE = 12786
@@ -67,11 +67,11 @@ def build_model():
   outputs = tf.keras.layers.Dense(NUM_CLASSES, activation="softmax")(x)
   return tf.keras.Model(inputs=inputs, outputs=outputs)
 
-# def exp_decay(epoch):
-#    initial_lrate = 0.1
-#    k = 1.0
-#    lrate = initial_lrate * exp(-k*t)
-#    return lrate
+def exp_decay(epoch):
+   initial_lrate = 0.01
+   k = 0.4
+   lrate = initial_lrate * exp(-k*t)
+   return lrate
 
 
 def main():
@@ -87,12 +87,12 @@ def main():
   model = build_model()
 
   model.compile(
-    optimizer=tf.optimizers.Adam(0.0001),
+    optimizer=tf.optimizers.Adam(),
     loss=tf.keras.losses.categorical_crossentropy,
     metrics=[tf.keras.metrics.categorical_accuracy],
   )
 
- # lrate = LearningRateScheduler(exp_decay)
+ lrate = LearningRateScheduler(exp_decay)
 
   log_dir='{}/owl-{}'.format(LOG_DIR, time.time())
   model.fit(
