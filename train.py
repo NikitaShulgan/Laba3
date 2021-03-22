@@ -67,11 +67,11 @@ def build_model():
   outputs = tf.keras.layers.Dense(NUM_CLASSES, activation="softmax")(x)
   return tf.keras.Model(inputs=inputs, outputs=outputs)
 
-def exp_decay(epoch):
-   initial_lrate = 0.1
-   k = 1.0
-   lrate = initial_lrate * exp(-k*t)
-   return lrate
+# def exp_decay(epoch):
+#    initial_lrate = 0.1
+#    k = 1.0
+#    lrate = initial_lrate * exp(-k*t)
+#    return lrate
 
 
 def main():
@@ -87,17 +87,17 @@ def main():
   model = build_model()
 
   model.compile(
-    optimizer=tf.optimizers.Adam(),
+    optimizer=tf.optimizers.Adam(0.0001),
     loss=tf.keras.losses.categorical_crossentropy,
     metrics=[tf.keras.metrics.categorical_accuracy],
   )
 
-  lrate = LearningRateScheduler(exp_decay)
+ # lrate = LearningRateScheduler(exp_decay)
 
   log_dir='{}/owl-{}'.format(LOG_DIR, time.time())
   model.fit(
     train_dataset,
-    epochs=50,
+    epochs=100,
     validation_data=validation_dataset,
     callbacks=[
       tf.keras.callbacks.TensorBoard(log_dir),
