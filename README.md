@@ -113,6 +113,24 @@ lrate = LearningRateScheduler(exp_decay)
 #### owl-1616415689.2764661 ```k=0.8```
 #### owl-1616417279.4621553 ```k=0.9```
 #### owl-1616418202.072512 ```k=1.0```
+
+![image](https://user-images.githubusercontent.com/80168174/112052620-61478680-8b64-11eb-8aeb-a03e04769447.png)
+#### epoch_categorical_accuracy
+<img src="https://raw.githubusercontent.com/NikitaShulgan/Laba3/main/For_Readmi/exp_0.01_epoch_categorical_accuracy.svg">
+
+#### epoch_loss
+<img src="https://raw.githubusercontent.com/NikitaShulgan/Laba3/main/For_Readmi/exp_0.01_epoch_loss.svg">
+
+#### epoch_categorical_accuracy
+<img src="https://raw.githubusercontent.com/NikitaShulgan/Laba3/main/For_Readmi/full_exp_epoch_categorical_accuracy.svg">
+
+#### epoch_loss
+<img src="https://raw.githubusercontent.com/NikitaShulgan/Laba3/main/For_Readmi/full_exp_epoch_loss.svg">
+
+### На 20й эпохе функция потерь алгоритма owl-1616434816.3802452 с коэффицентами ```k=0.5 l=0.01``` достигла значения 0,1995. Метрика качества на данной эпохе 89,24%.
+### На 30й эпохе функция потерь алгоритма owl-1616337614.888935 с коэффицентом ```k=0.5``` достигла значения 0,1947. Метрика качества на данной эпохе 89,31%.
+### Было замечено, что при уменьшении параметра ``` l ```, алгоритм сходится быстрее, но теряет в точности.
+
 ![image](https://user-images.githubusercontent.com/80168174/111909940-4bf13000-8a70-11eb-8d10-c1e00016f9f0.png)
 #### epoch_categorical_accuracy
 <img src="https://raw.githubusercontent.com/NikitaShulgan/Laba3/main/For_Readmi/exp_epoch_categorical_accuracy.svg">
@@ -129,7 +147,6 @@ lrate = LearningRateScheduler(exp_decay)
 #### epoch_loss
 <img src="https://raw.githubusercontent.com/NikitaShulgan/Laba3/main/For_Readmi/exp_valid_epoch_loss.svg">
 
-#### На 25й эпохе график с ```k=0.1``` достиг минимальной ошибки 0,1868. Метрика качества 89,07%.
 
 ### Общее сравнение
 ![image](https://user-images.githubusercontent.com/80168174/112022103-02bde080-8b43-11eb-8588-3939dfdb8f52.png)
