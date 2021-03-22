@@ -41,6 +41,12 @@ lrate = LearningRateScheduler(step_decay)
 #### owl-1616284313.4728131, drop = 0.6, epochs_drop = 10.0
 #### owl-1616339973.6213276, drop = 0.4, epochs_drop = 10.0
 #### owl-1616341240.7965152, drop = 0.5, epochs_drop = 5.0
+
+#### owl-1616436470.0354586 drop = 0.4    epochs_drop = 5.0
+#### owl-1616437242.9938867 drop = 0.4    epochs_drop = 3.0
+#### owl-1616438159.4302144  drop = 0.5   epochs_drop = 3.0
+#### owl-1616438913.9406679 drop = 0.6   epochs_drop = 3.0
+#### owl-1616439741.1608436 drop = 0.6   epochs_drop = 5.0
 ![image](https://user-images.githubusercontent.com/80168174/111912113-40eecd80-8a79-11eb-8551-a5e713ebf7d5.png)
 #### epoch_categorical_accuracy
 <img src="https://raw.githubusercontent.com/NikitaShulgan/Laba3/main/For_Readmi/step_epoch_categorical_accuracy.svg">
@@ -57,6 +63,15 @@ lrate = LearningRateScheduler(step_decay)
 
 #### epoch_loss
 <img src="https://raw.githubusercontent.com/NikitaShulgan/Laba3/main/For_Readmi/step_valid_epoch_loss.svg">
+
+![image](https://user-images.githubusercontent.com/80168174/112046863-9ac8c380-8b5d-11eb-8325-38a15e256695.png)
+
+
+#### epoch_categorical_accuracy
+<img src="https://raw.githubusercontent.com/NikitaShulgan/Laba3/main/For_Readmi/step_decay_2_epoch_categorical_accuracy.svg">
+
+#### epoch_loss
+<img src="https://raw.githubusercontent.com/NikitaShulgan/Laba3/main/For_Readmi/step_decay_2_epoch_loss.svg">
 
 #### На 24й эпохе функция потерь с ```drop = 0.6, epochs_drop = 10.0``` достигла своего мин значения 0,188. Метрика качества на 24 эпохе 89,13%. 
 
