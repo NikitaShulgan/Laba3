@@ -78,5 +78,12 @@ lrate = LearningRateScheduler(exp_decay)
 
 #### epoch_loss
 <img src="https://raw.githubusercontent.com/NikitaShulgan/Laba3/main/For_Readmi/exp_epoch_loss.svg">
+
+![image](https://user-images.githubusercontent.com/80168174/111938945-1da93a00-8adc-11eb-97e5-7b3c5aa48458.png)
+#### epoch_categorical_accuracy
+<img src="https://raw.githubusercontent.com/NikitaShulgan/Laba3/main/For_Readmi/exp_valid_epoch_categorical_accuracy.svg">
+
+#### epoch_loss
+<img src="https://raw.githubusercontent.com/NikitaShulgan/Laba3/main/For_Readmi/exp_valid_epoch_loss.svg">
 ###  Анализ результатов
    Нами было исследовано 2 алгоритма затухания: Пошаговое затухание (Step Decay) и Экспоненциальное затухание (Exponential Decay). По результатам экспериментов видно, что во всех случаях epoch_loss на валидации 0.2 и epoch_categorical_accuracy на валидации 89%. Но используя пошаговое затухание, мы смогли раньше приблизиться к итоговым результатам. 
