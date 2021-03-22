@@ -37,16 +37,16 @@ def step_decay(epoch):
 
 lrate = LearningRateScheduler(step_decay)
 ```
-#### owl-1616282276.646658, drop = 0.5, epochs_drop = 10.0
-#### owl-1616284313.4728131, drop = 0.6, epochs_drop = 10.0
-#### owl-1616339973.6213276, drop = 0.4, epochs_drop = 10.0
-#### owl-1616341240.7965152, drop = 0.5, epochs_drop = 5.0
+#### owl-1616282276.646658 ```drop = 0.5, epochs_drop = 10.0```
+#### owl-1616284313.4728131 ```drop = 0.6, epochs_drop = 10.0```
+#### owl-1616339973.6213276, ```drop = 0.4, epochs_drop = 10.0```
+#### owl-1616341240.7965152, ```drop = 0.5, epochs_drop = 5.0```
 
-#### owl-1616436470.0354586 drop = 0.4    epochs_drop = 5.0
-#### owl-1616437242.9938867 drop = 0.4    epochs_drop = 3.0
-#### owl-1616438159.4302144  drop = 0.5   epochs_drop = 3.0
-#### owl-1616438913.9406679 drop = 0.6   epochs_drop = 3.0
-#### owl-1616439741.1608436 drop = 0.6   epochs_drop = 5.0
+#### owl-1616436470.0354586 ```drop = 0.4    epochs_drop = 5.0```
+#### owl-1616437242.9938867 ```drop = 0.4    epochs_drop = 3.0```
+#### owl-1616438159.4302144  ```drop = 0.5   epochs_drop = 3.0```
+#### owl-1616438913.9406679 ```drop = 0.6   epochs_drop = 3.0```
+#### owl-1616439741.1608436 ```drop = 0.6   epochs_drop = 5.0```
 ![image](https://user-images.githubusercontent.com/80168174/111912113-40eecd80-8a79-11eb-8551-a5e713ebf7d5.png)
 #### epoch_categorical_accuracy
 <img src="https://raw.githubusercontent.com/NikitaShulgan/Laba3/main/For_Readmi/step_epoch_categorical_accuracy.svg">
