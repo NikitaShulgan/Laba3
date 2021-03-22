@@ -58,7 +58,7 @@ lrate = LearningRateScheduler(step_decay)
 #### epoch_loss
 <img src="https://raw.githubusercontent.com/NikitaShulgan/Laba3/main/For_Readmi/step_valid_epoch_loss.svg">
 
-#### На 44й эпохе график с ```drop = 0.5, epochs_drop = 10.0``` достиг своего максимума 89,87%. Дальше результаты стали ухудшаться. 
+#### На 24й эпохе функция потерь с ```drop = 0.6, epochs_drop = 10.0``` достигла своего мин значения 0,188. Метрика качества на 24 эпохе 89,13%. 
 
 ### 2b. Экспоненциальное затухание (Exponential Decay)
 ```
